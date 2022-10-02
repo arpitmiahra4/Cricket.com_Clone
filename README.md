@@ -173,7 +173,8 @@ How Deploy Works? - <https://github.com/mskian/cri-deploy>
 git clone https://github.com/arpitmiahra4/Cricket.com_Clone.git
 
 ```
-
+## Deploy Netlify link; must vist...**
+link --> "https://sweet-blancmange-3c6ad0.netlify.app/"
 
 
 ## Disclaimer 🗃
