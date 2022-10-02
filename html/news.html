@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(238, 238, 238, 0.712);
+        }
+        .date_author{
+            display: flex;
+            justify-content: space-between;
+        }
+        .elem{
+            background-color: white;
+            box-shadow: rgb(116, 170, 214) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: rgba(155, 193, 224, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+        #name{
+                color: rgba(0,0,0,.7);
+                font-family: Montserrat;
+                margin: 20px;
+                padding-left: 180px;
+        }
+        .name2{
+            padding: 10px 0px;
+            
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <h2 id="name">News and Articles</h2>
+    <div id="container"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="../js/news.js" ></script>
+
+<script type="module">
+    import {navbar} from '../components/nav.js'
+    let navbar_append=document.getElementById("navbar")
+    navbar_append.innerHTML=navbar()
+
+    import {footer} from '../components/foot.js'
+    let footer_append=document.getElementById("footer")
+    footer_append.innerHTML=footer()
+</script>

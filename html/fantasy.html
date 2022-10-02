@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Center</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <!-- yellow bar on top -->
+   <div id="fmain">
+    <div class="ftop">
+        <h2>FANTASY CENTER</h2>
+        <img  src="https://www.cricket.com/svgs/language_icon.svg" width="25" alt="hindi-english logo">
+    </div>
+    <div id="fmatch">
+        <h2>UPCOMING MATCHES</h2>
+       <div id="mmm">
+        <div class="fg">
+            <div>
+        <img id="ready" src="https://www.cricket.com/svgs/ready_to_play.png" width="85" alt="redy to play">
+        <div class="fthings">
+            <p style="color:white ;">Qualifier 1, Caribbean Premier League, 2022</p>
+        <div id="inner">
+            
+            <img src="https://images.cricket.com/teams/1405_flag_safari.png" alt="">
+                <h2>BR</h2>
+                <h3 style="width: 32px;height: 22px;border-radius: 20px; background-color:#ffb700;margin-top: -0px;color: black;">Vs</h3>
+                <h2>GUY</h2><img src="https://images.cricket.com/teams/1407_flag_safari.png"  alt="team">
+        </div>
+         <h5 style="background-color: #ffb700; width: 130px;margin: auto; margin-bottom: 15px;color: black; border-radius: 10px;">starts in 0h 0m 0s</h5>
+        <h5>September 27 2022. | <img src="https://www.cricket.com/svgs/location-icon-color.png" width="10" alt=""> Guyana</h4>
+                </div>
+            </div>
+        </div>
+        <div id="chota" class="fg">
+            <div>
+        <img id="ready" src="https://www.cricket.com/svgs/ready_to_play.png" width="85" alt="redy to play">
+        <div class="fthings">
+            <p style="color:white ;">5th T20I,England tour of Pakistan,2022</p>
+        <div id="inner">
+            
+            <img src="https://images.cricket.com/teams/6_flag_safari.png" alt="">
+                <h2>PAK</h2>
+                <h3 style="width: 32px;height: 22px;border-radius: 20px; background-color:#ffb700;margin-top: -0px;color: black;">Vs</h3>
+                <h2>ENG</h2><img src="https://images.cricket.com/teams/3_flag_safari.png"  alt="team">
+        </div>
+         <h5 style="background-color: #ffb700; width: 130px;margin: auto; margin-bottom: 15px;color: black; border-radius: 10px;">starts in 0h 0m 0s</h5>
+        <h5>September 28 2022. | <img src="https://www.cricket.com/svgs/location-icon-color.png" width="10" alt=""> Lahore</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="compp">
+        <h3>COMPLETED MATCHES</h3>
+        <div id="comm">
+        <div class="cinn">
+            <img src="https://images.cricket.com/teams/1405_flag_safari.png" alt="">
+            <div>
+                <p>Qualifier 1, Caribbean Premier League, 2022</p>
+                <h2>BR Vs GUY</h2>
+                <p>BR Won By 87 runs</p>
+            </div>
+        </div>
+        <div class="cinn">
+            <img src="https://images.cricket.com/teams/1410_flag_safari.png" alt="">
+            <div>
+                <p>Qualifier 1, Caribbean Premier League, 2022</p>
+                <h2>SLK Vs JAM</h2>
+                <p>BR Won By 87 runs</p>
+            </div>
+        </div> <div class="cinn">
+            <img src="https://www.cricket.com/svgs/images/flag_empty.png" alt="">
+            <div>
+                <p>Qualifier 1, Caribbean Premier League, 2022</p>
+                <h2>EN-L Vs AU-L</h2>
+                <p>BR Won By 6 wicket</p>
+            </div>
+        </div> <div class="cinn">
+            <img src="https://images.cricket.com/teams/2_flag_safari.png" alt="">
+            <div>
+                <p>Qualifier 1, Caribbean Premier League, 2022</p>
+                <h2>UAE Vs BAN</h2>
+                <p>BR Won By 32 runs</p>
+            </div>
+        </div> <div class="cinn">
+            <img src="https://images.cricket.com/teams/1405_flag_safari.png" alt="">
+            <div>
+                <p>Qualifier 1, Caribbean Premier League, 2022</p>
+                <h2>BR Vs GUY</h2>
+                <p>BR Won By 87 runs</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="flast">
+        <img src="../images/fantasy22.jpeg" alt="">
+        <img src="../images/fantasy23.jpeg" alt="">
+    </div>
+    </div>
+   </div>
+   <div id="footer"></div>
+</body>
+</html>
+<script src="../js/fantasy.js"></script>
+<script type="module">
+    import {navbar} from '../components/nav.js'
+    let navbar_append=document.getElementById("navbar")
+    navbar_append.innerHTML=navbar()
+
+    import {footer} from '../components/foot.js'
+    let footer_append=document.getElementById("footer")
+    footer_append.innerHTML=footer()
+</script>

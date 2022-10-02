@@ -1,0 +1,106 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #main {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        /* background-color: black; */
+      }
+      #container {
+        width: 40%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      img {
+        width: 10%;
+        margin: 20px;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 10px 0;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(236, 236, 236);
+      }
+      input:focus {
+        outline: none;
+        border: 1px solid;
+        border-color: #25d298;
+      }
+      #submit {
+        background-color: #25d298;
+        border-radius: 30px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #facebook,
+      #google {
+        background-color: rgb(66, 103, 178);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+      #google {
+        background-color: rgb(187, 0, 27);
+      }
+      span > a {
+        color:blue;
+      }
+      #success {
+        z-index: 1;
+        top: 0;
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        height: 120%;
+        background: rgba(255, 255, 255, 0.55);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(10px);
+      }
+      #message {
+        border-radius: 30px;
+        background-color: white;
+        opacity: 100%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #message > button {
+        width: 70%;
+        background-color: #25d298;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+   

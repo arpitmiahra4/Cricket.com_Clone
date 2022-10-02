@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ranking</title>
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+#bton{
+    display: flex;
+ gap: 50px;
+ /* border: 1px solid blue; */
+ width: 70%;
+margin: auto;
+
+}
+#bton div{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 22px;
+}
+h2{
+    margin-left: 220px;
+}
+#contttt{
+/* border: 2px solid red; */
+width: 70%;
+margin: auto;
+margin-top: 20px;
+}
+#chiz{
+    display: flex;
+    gap: 200px;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+}
+#bahaar{
+    display: flex;
+    gap: 200px;
+    height: 40px;
+    justify-content: flex-start;
+   border-bottom: 1px solid black;
+   padding-left: 20px;
+}
+#naams{
+    display: flex;
+    /* border: 1px solid blue; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#naams img{
+    width: 40px;
+    height: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <h2>Rankings</h2>
+    <div id="bton">
+        <div id="odi" onclick="odi()">ODI</div>
+        <div id="test" onclick="test()">TEST</div>
+        <div id="t20" onclick="t20()">T20</div>
+    </div>
+    <div id="contttt">
+        <div id="chiz">
+            <p>RANK</p>
+            <p>TEAMS</p>
+        </div>
+        <div id="conti"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="../js/ranking.js"></script>
+
+<script type="module">
+    import {navbar} from '../components/nav.js'
+    let navbar_append=document.getElementById("navbar")
+    navbar_append.innerHTML=navbar()
+
+    import {footer} from '../components/foot.js'
+    let footer_append=document.getElementById("footer")
+    footer_append.innerHTML=footer()
+</script>

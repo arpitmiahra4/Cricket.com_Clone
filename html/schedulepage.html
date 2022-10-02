@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/schedulepage.css">
+</head>
+<body>
+    <div id="navbar"></div>
+        <div id="header">
+            <div class="head">
+                <h2>Schedule</h2>
+            </div>
+            <div class="head">
+                   <div id="inn">
+                       <button onclick="upcoming()" id="uc">UPCOMING</button>
+                       <button onclick="live()" id="lv">LIVE</button>
+                       <button onclick="results()" id="rs">RESULTS</button>
+                   </div>
+                   <div>
+                        <select name="" id="inn2" onchange="selectone()">
+                            <option value="ALL">ALL</option>
+                            <option value="INT">INTERNATIONAL</option>
+                            <option value="DOM">DOMESTIC</option>
+                        </select>
+                   </div>
+            </div>
+        </div>
+        <div id="container"></div>
+        <div id="footer"></div>
+</body>
+</html>
+<script src="../js/schedulepage.js"></script>
+<script type="module">
+    import {navbar} from '../components/nav.js'
+    let navbar_append=document.getElementById("navbar")
+    navbar_append.innerHTML=navbar()
+
+    import {footer} from '../components/foot.js'
+    let footer_append=document.getElementById("footer")
+    footer_append.innerHTML=footer()
+</script>

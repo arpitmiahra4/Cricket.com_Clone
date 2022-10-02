@@ -1,0 +1,153 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+#navbar{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 105px;
+    position: sticky;
+    top:0;
+    /* overflow: hidden; */
+    z-index: 10000;
+    background-color: rgb(23,33,50);
+    
+}
+#containing_logo_othertabs{
+    /* border: 1px solid wheat; */
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    /* border:3px solid red; */
+    
+}
+#containing_logo{
+    /* border: 1px solid wheat; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+#containing_othertabs{
+     /* border: 1px solid wheat;  */
+    width: 68%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    /* justify-content: space-between; */
+
+}
+#fantasy_tab{
+    width: 100px;
+}
+.containing_tabs{
+     /* border: 1px solid yellow;  */
+    width:75px;
+    height: 75px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.containing_tabs:hover{
+    background-color: rgb(47,56,71);
+    
+}
+.tab_logo{
+    /* border: 1px solid yellow; */
+   width: fit-content;
+   margin: auto;
+   margin-top: 10px;
+}
+.tab_name{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    color:rgb(198,195,195);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+#more_arrow{
+    display: flex;
+    justify-content: center;
+
+}
+/* ------------------------------features of under menu------ */
+ #adjust1,#adjust2{
+     /* border:2px solid red;  */
+    margin-bottom: -12px;
+} 
+#adjlast{
+    margin-bottom: -12px;
+}
+ #adjust3{
+    /* border:2px solid red; */
+    margin-bottom: -10px;
+    margin-right: 10px;
+} 
+#adj4{
+    margin-bottom: -5px;
+}
+#adj5{
+margin-bottom: -13px;
+}
+#leftshift{
+     /* border:2px solid red;  */
+    margin-left: -20px;
+    margin-bottom: -2px
+} 
+#fantasy_tab{
+    margin-bottom: -12px;
+}
+#menu_content{
+    /* border:2px solid red; */
+    padding-top: 10px;
+    width: 200px;
+    height: 252px;  
+    background-color: rgb(23,33,50);
+    margin-left:-130px ;
+    display: none;
+     z-index: 1000; 
+}
+.menu_content_row{
+    width: 100%;
+    height: 40px;
+     /* border: 1px solid yellow;  */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.menu_content_row:hover{
+    background-color: rgb(47,56,71);
+}
+#getdropdown:hover #menu_content{
+    display: block;
+    
+    
+}
+.menu_content_row_logo{
+   margin-left: 20px; 
+   display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+.name_of_logo{
+    text-align: center;
+    color:rgb(198,195,195);
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-left: 8px;
+}

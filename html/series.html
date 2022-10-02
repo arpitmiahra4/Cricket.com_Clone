@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/series.css" />
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="level">
+      <h1><label for="series">Series</label></h1>
+    </div>
+    <div id="upper">
+      <h2 onclick="up()" id="up">UPCOMING</h2>
+      <h2 onclick="on()" id="on">ONGOING</h2>
+      <h2 onclick="co()" id="co">COMPLETED</h2>
+    </div>
+    <hr />
+    <div id="btt">
+      <h3 id="al" onclick="alld()">ALL</h3>
+      <h3 id="ii" onclick="ii()">INTERNATIONAL</h3>
+      <h3 id="do" onclick="doo()">DOMESTIC</h3>
+      <h3 id="wo" onclick="wo()">WOMEN'S</h3>
+      <div id="fill">
+        <img src="https://www.cricket.com/svgs/filter.svg" alt="" width="20" />
+        <h3>Filter</h3>
+      </div>
+    </div>
+    <hr />
+    <div class="modal-container" id="modal_container">
+      <div id="cc">
+        <h2>Filter</h2>
+        <button id="close">close</button>
+      </div>
+      <div class="modal">
+        <h3 class="bbb">Country</h3>
+        <div id="coun">
+          <div>IND</div>
+          <div>AUS</div>
+          <div>NZ</div>
+          <div>ENG</div>
+          <div>SA</div>
+          <div>PAK</div>
+          <div>BAN</div>
+          <div>SL</div>
+          <div>WI</div>
+        </div>
+      </div>
+      <div class="modal">
+        <h3 class="bbb">Format</h3>
+        <div id="for">
+          <div>ODI</div>
+          <div>T20</div>
+          <div>Tests</div>
+          <div>T100</div>
+        </div>
+      </div>
+      <button id="done">Done</button>
+    </div>
+    <div>
+      <div id="containers"></div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="../js/series.js"></script>
+<script type="module">
+  import {navbar} from '../components/nav.js'
+  let navbar_append=document.getElementById("navbar")
+  navbar_append.innerHTML=navbar()
+
+  import {footer} from '../components/foot.js'
+  let footer_append=document.getElementById("footer")
+  footer_append.innerHTML=footer()
+</script>

@@ -1,0 +1,108 @@
+/* main body baar css */
+#fmain{
+    width: 70%;
+    margin: auto;
+}
+/* whole inner things css */
+#fmatch{
+background-color: black;
+color: grey;
+padding-left: 20px;
+}
+/* fantasy bar css */
+.ftop{
+    display: flex;
+    align-items: center;
+   gap: 75%;
+   height: 50px;
+   background-color: #ffb700;
+ padding-left: 20px;
+ font-weight: normal;
+}
+/* image ready  */
+#ready{
+    margin-top: -20px;
+    margin-left: -15px;
+}
+/* upper inner div style */
+.fthings{
+    background-color: #333333;
+    border: 2px solid #ffb700;
+    cursor: pointer;
+    width: 500px;
+    height: 130px;
+   text-align: center;
+   margin-top: -90px;
+   
+   border-radius: 20px;
+}
+#chota div{
+    width:480px ;
+}
+.fthings p{
+    margin-top: -0px;
+}
+.fthings h5{
+    margin-top: -8px;
+}
+#inner img{
+    width: 50px;
+    height: 40px;
+    border-radius:60%;
+    margin-top: -5px;
+}
+#inner{
+    display: flex;
+    margin-top: -20px;
+   justify-content: center;
+   margin-top: 10px;
+   gap: 25px;
+}
+#inner h2{
+    margin-top: -0px;
+}
+
+#mmm{
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+/* complte match css */
+.cinn img{
+    width: 50px;
+    height: 30px;
+    border-radius:60%;
+}
+.cinn{
+    border: 1px solid grey;
+    width: 500px;
+    height: 110px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    border-radius: 20px;
+}
+#comm{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+/* last */
+#flast{
+    margin-top: 10px;
+    margin-left: -20px;
+
+}
+#flast img{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+#compp{
+    margin-top: 20px;
+}

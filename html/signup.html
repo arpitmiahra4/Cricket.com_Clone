@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #main {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        /* background-color: black; */
+      }
+      #container {
+        width: 40%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      img {
+        width: 10%;
+        margin: 20px;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 10px 0;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(236, 236, 236);
+      }
+      input:focus {
+        outline: none;
+        border: 1px solid;
+        border-color: #25d298;
+      }
+      #submit:hover{
+      cursor: pointer;
+      }
+      #submit {
+        background-color: #25d298;
+        border-radius: 30px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #facebook,
+      #google {
+        background-color: rgb(66, 103, 178);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+      #google {
+        background-color: rgb(187, 0, 27);
+      }
+      span > a {
+        color: blue;
+      }
+      #success {
+        z-index: 1;
+        top: 0;
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        height: 120%;
+        background: rgba(255, 255, 255, 0.55);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(10px);
+      }
+      #message {
+        border-radius: 30px;
+        background-color: white;
+        opacity: 100%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #message > button {
+        width: 70%;
+        background-color: #25d298;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* @media all and (min-width: 768px) and (max-width: 1024px) {
+        #container {
+          width: 60%;
+        }
+        #message {
+          width: 80%;
+        }
+      } */
+      /* @media all and (min-width: 320px) and (max-width: 767px) {
+        #container {
+          width: 90%;
+        }
+        #message {
+          width: 90%;
+        }
+      } */
+    </style>
+  </head>
+  <body >
+    <div id="success">
+      <div id="message">
+        <h1 id="state"></h1>
+        <h2 id="res"></h2>
+        <button><a id="rd-link"></a></button>
+      </div>
+    </div>
+    <div id="main">
+      <div id="container">
+        <h2>Let's set up your account</h2>
+        <input type="text" placeholder="First Name (optional)" />
+        <input type="text" id="email" placeholder="Email Address" />
+        <input type="password" id="password" autofocus class="form_input" placeholder="Password" />
+        <div class="form_input_err_message"></div>
+        <button id="submit">Create My Account</button>
+        <div>OR</div>
+        <button id="facebook">Continue With Facebook</button>
+        <button id="google">Continue With Gmail</button>
+        <p>
+          Alreday have an accoun?
+          <span><a href="signin.html"> Login here.</a></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let res = document.getElementById("res");
+  let state = document.getElementById("state");
+  let users = JSON.parse(localStorage.getItem("users")) || {};
+  let submit = document.getElementById("submit");
+  let rd_link = document.getElementById("rd-link");
+  let success = document.getElementById("success");
+  submit.addEventListener("click", () => {
+    console.log("12");
+    let user = {
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+    };
+    if (user.email == "" || user.password == "") {
+      success.style.display = "flex";
+      state.textContent = "Error!";
+      state.style.color = "red";
+      res.textContent = "Please fill all the fields";
+      rd_link.href = "signup.html";
+      rd_link.textContent = "Retry";
+      return;
+    }
+    // users.push(user);
+    localStorage.setItem("users", JSON.stringify(user));
+    success.style.display = "flex";
+    state.textContent = "Success!";
+    state.style.color = "Green";
+    res.textContent = "Your account has been created";
+    rd_link.href = "signin.html";
+    rd_link.textContent = "Continue";
+  });
+  let fbook=document.getElementById("facebook")
+  fbook.addEventListener("click",function(){
+// event.addEventListener();
+window.location.href="https://www.facebook.com/"
+  })
+  let gooogle=document.getElementById("google")
+  gooogle.addEventListener("click",function(){
+    window.location.href="https://www.gmail.com/"
+  })
+let errM=document.querySelectorAll(".form_input")
+errM.forEach(element => {
+  element.addEventListener("blur",e => {
+    if(e.target.id=="password" && e.target.value.length >0 && e.target.value.length< 10){
+      setinputError(element,"Password must be alteast 10 character in length");
+    }
+  })
+  element.addEventListener("input",e =>{
+    clearInputError(element);
+  });
+});
+</script>
+
+<!-- <script type="module">
+
+    import navbar from './components/nav.js'
+    let navbar_append=document.getElementById("nav_container")
+    navbar_append.innerHTML=navbar()
+</script> -->
