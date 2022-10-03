@@ -165,7 +165,7 @@ fetchscore();
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fcri-deploy)  
 
-How Deploy Works? - <https://github.com/mskian/cri-deploy>
+How Deploy Works? - < https://github.com/arpitmiahra4/server >
 
 ## Development 🍩
 
